@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <script>
+      console.clear();
+      console.log("-------");
+      // *** //
+      const einkaufsliste = [
+        {
+          produkt: "iPhone Pro Max 14",
+          preis: 1400,
+          farbe: "Silber"
+        },
+        {
+          produkt: "Samsung Galaxy S23 Ultra",
+          preis: 1200,
+          farbe: "Weis"
+        },
+        {
+          produkt: "Monitor",
+          preis: 95.26,
+          farbe: "Blau"
+        },
+        {
+          produkt: "Chips",
+          preis: 0.99,
+          farbe: "Gold-Braun"
+        },
+        {
+          produkt: "Lindt",
+          preis: 3.99,
+          farbe: "Braun"
+        },
+        {
+          produkt: "Edamer",
+          preis: 2.49,
+          farbe: "Gelb"
+        },
+        {
+          produkt: "Cola",
+          preis: 1.59,
+          farbe: "Schwarz"
+        },
+        {
+          produkt: "Vegane Haribo Bonbon",
+          preis: 0.99,
+          farbe: "Gemischt"
+        }
+      ];
+      // *** //
+      for (let x = 0; x < einkaufsliste.length; x++) {
+        // Die Variable "position" bekommt den Index + 1
+        let position = x + 1;
+        // Das Objekt an der Position x wird in die Variable
+        // objekt eingelesen
+        let objekt = einkaufsliste[x];
+        // *** //
+        console.log(
+          position +
+            ". " +
+            "Dennis hat " +
+            objekt.produkt +
+            " für " +
+            objekt.preis +
+            "€, in der Farbe " +
+            objekt.farbe +
+            " gekauft"
+        );
+      }
+    </script>
+  </body>
+</html>
